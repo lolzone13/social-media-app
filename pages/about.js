@@ -1,12 +1,18 @@
+import Head from "next/head";
+
+
 const About = () => {
-
-
     return (
-        <div>
-            <h1>About Page</h1>
-            <p>heknoaasd sidfjosf isfofsd</p>
-            <p> dfojisfp isodfs </p>
-        </div>
+        <>
+        <Head>
+            <title>Monet | About</title>
+        </Head>
+            <div>
+                <h1>About Page</h1>
+                <p>heknoaasd sidfjosf isfofsd</p>
+                <p> dfojisfp isodfs </p>
+            </div>
+        </>
     );
 }
 

@@ -1,11 +1,17 @@
-import Navbar from "../components/navbar"
+import Head from "next/head";
+
 
 const feed = () => {
     return (
+        <>
+        <Head>
+            <title> Monet | Feed</title>
+        </Head>
         <div>
-            <Navbar />
+         
             <h1>Hello Feed</h1>
         </div>
+        </>
     )
 }
 
