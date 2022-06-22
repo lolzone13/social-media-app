@@ -2,7 +2,7 @@ import Head from "next/head";
 import axios from 'axios'
 
 export const getStaticPaths = async () => {
-    const res = await axios.get('https://jsonplaceholder.typicode.com/users/');
+    const res = await axios.get('https://jsonplaceholder.typicode.com/users');
     const paths = res.data.map((item) => {
         return {
             params: { id: item.id.toString() }
@@ -16,7 +16,8 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     try {
-        const res = await axios.get('https://jsonplaceholder.typicode.com/users/' + context.params.id);
+        const id = context.params.id;
+        const res = await axios.get('https://jsonplaceholder.typicode.com/users/' + id);
 
         return {
             props: { data: res.data }
@@ -32,9 +33,7 @@ export default function post({ data }) {
         <Head>
             <title>Monet | post</title>
         </Head>
-        {data.map((item) => {
-            return <li key={item.id}>{item.username}</li>
-        })}
+        {data.username}
         <div>Post!</div>
         </>
     )
