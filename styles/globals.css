@@ -1,13 +1,16 @@
-html {
-  bottom: 0;
-  background-color: azure;
-}
+
+
+
 body {
   padding: 0;
   margin: 0;
+  bottom: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
 }
+
+
 
 a {
   color: inherit;
