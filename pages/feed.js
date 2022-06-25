@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import Card from "../components/Card";
 
 const feed = () => {
     return (
@@ -9,7 +9,7 @@ const feed = () => {
         </Head>
         <div>
          
-            <h1>Hello Feed</h1>
+        <Card />
         </div>
         </>
     )
