@@ -1,8 +1,10 @@
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useContext } from "react"
+import { AuthContext } from "../../context/AuthContext";
 
 export default function register() {
 
+    const { registerUser } = useContext(AuthContext);
     const [regDetails, setRegDetails] = useState({
         email: "",
         password: "",
@@ -11,7 +13,14 @@ export default function register() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(regDetails);
+        console.log(registerUser);
+        registerUser(regDetails);
+        setRegDetails({
+            email: "",
+            password: "",
+            username: ""
+        });
+
     }
 
     return (
