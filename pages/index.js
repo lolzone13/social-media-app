@@ -1,21 +1,14 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import axios from 'axios'
 
-export const getStaticProps = async () => {
-    try {
-        const res = await axios.get('https://jsonplaceholder.typicode.com/users/1/posts');
 
-        return {
-            props: { data: res.data }
-        };
-    } catch (error) {
-        console.log(error);
-    }
-}
 
-export default function Home({ data }) {
+export default function Home({ auth, funAuth }) {
+    const router = useRouter();
+    if (!auth.user) router.push('/auth/register');
     return (
         <>
             <Head>
@@ -26,9 +19,7 @@ export default function Home({ data }) {
                 <h1>Homepage</h1>
             </div>
             <div>
-                {data.map((item) => {
-                    return <h3 key={item.id}>{item.title}</h3>
-                })}
+             
             </div>
         </>
     )
