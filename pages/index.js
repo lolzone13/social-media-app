@@ -1,14 +1,20 @@
 import Head from 'next/head'
+import { useEffect } from 'react'
 import { useRouter } from 'next/router'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import axios from 'axios'
-
+import Footer from '../components/Footer'
 
 
 export default function Home({ auth, funAuth }) {
     const router = useRouter();
-    if (!auth.user) router.push('/auth/register');
+    useEffect(() => {
+        if (!auth.user) {
+            router.push('/auth/login');
+        }
+    }, []);
+
     return (
         <>
             <Head>
@@ -21,6 +27,7 @@ export default function Home({ auth, funAuth }) {
             <div>
              
             </div>
+            <Footer />
         </>
     )
 }
