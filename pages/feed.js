@@ -31,7 +31,8 @@ const feed = ({ auth, funAuth, ninjas }) => {
                     <div class="container px-5 py-24 mx-auto">
                         <div class="flex flex-wrap -m-4">
                             {ninjas.data.map((val) => {
-                                return <Card key={val.id} title={val.title} body={val.body} user={val.email} tag={val.tag} upvotes={val.upvotes} />
+                                const newStr = val.body.substring(0, Math.min(100, val.body.length)) + '...';
+                                return <Card key={val.id} title={val.title} body={newStr} user={val.email} tag={val.tag} upvotes={val.upvotes} />
                             })}
                         </div>
                     </div>

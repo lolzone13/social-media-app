@@ -27,14 +27,20 @@ const Navbar = () => {
                                         Feed
                                     </a>
                                     </Link>
-                                    <Link href="/about">
-                                    <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" href="/#">
-                                        About
-                                    </a>
-                                    </Link>
+
                                     <Link href="/profile">
                                     <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" href="/#">
                                     Profile
+                                    </a>
+                                    </Link>
+                                    <Link href="/create">
+                                    <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" href="/#">
+                                        Create Post
+                                    </a>
+                                    </Link>
+                                    <Link href="/about">
+                                    <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" href="/#">
+                                        About
                                     </a>
                                     </Link>
                                 </div>
@@ -64,7 +70,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 </div>
-                <div className="md:hidden">
+                {/* <div className="md:hidden">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         <a className="text-gray-300 hover:text-gray-800 dark:hover:text-white block px-3 py-2 rounded-md text-base font-medium" href="/#">
                             Home
@@ -89,7 +95,7 @@ const Navbar = () => {
                             </button>
                         </form>
                     </div>
-                </div>
+                </div> */}
             </nav>
         </div>
     )
