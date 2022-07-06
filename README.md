@@ -1,34 +1,115 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Blogging website
 
-First, run the development server:
+A blog based social media website where users can post and read blogs written in markdown.
 
-```bash
-npm run dev
-# or
-yarn dev
+[Backend of the Application](https://github.com/lolzone13/social-media-app-backend)
+
+
+## Tech Stack
+
+**Client:** Next.js, TailwindCSS
+
+**Server:** Node, Express, Postgresql
+
+**Authentication:** JWT
+
+
+
+
+## Pages
+
+#### Register Page
+
+```http
+    /auth/register
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+#### Login Page
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```http
+    /auth/login
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+#### Home Page
 
-To learn more about Next.js, take a look at the following resources:
+```http
+    /
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#### Feed
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```http
+    /feed
+```
 
-## Deploy on Vercel
+#### Create Post
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```http
+    /create
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#### Profile
+
+```http
+    /profile
+```
+
+#### About
+
+```http
+    /about
+```
+## Screenshots
+
+### Login
+![App Screenshot](https://github.com/lolzone13/social-media-app/blob/main/docs/login.png)
+
+### Home
+![App Screenshot](https://github.com/lolzone13/social-media-app/blob/main/docs/home.png)
+
+### Feed
+![App Screenshot](https://github.com/lolzone13/social-media-app/blob/main/docs/feed.png)
+
+### Create
+![App Screenshot](https://github.com/lolzone13/social-media-app/blob/main/docs/create.png)
+
+### Profile
+![App Screenshot](https://github.com/lolzone13/social-media-app/blob/main/docs/profile.png)
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the development server
+
+```bash
+  npm run dev
+```
+
+
+## Contributing
+
+Contributions are always welcome!
+
+See [`contributing.md`](https://github.com/lolzone13/social-media-app/blob/main/docs/CONTRIBUTING.md) for ways to get started.
+
+
