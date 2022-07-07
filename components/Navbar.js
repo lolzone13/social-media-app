@@ -10,38 +10,38 @@ const Navbar = () => {
                     <div className="flex items-center justify-between h-16">
                         <div className=" flex items-center">
                             <Link href="/">
-                                <a className="flex-shrink-0" href="/">
-                                    
+                                <a className="flex-shrink-0">
+
                                     <Image className="h-4 w-4" src={rocket} height={50} width={50} />
                                 </a>
                             </Link>
                             <div className="hidden md:block">
                                 <div className="ml-10 flex items-baseline space-x-4">
                                     <Link href="/">
-                                    <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" href="/#">
-                                        Home
-                                    </a>
+                                        <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium">
+                                            Home
+                                        </a>
                                     </Link>
                                     <Link href="/feed">
-                                    <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" href="/#">
-                                        Feed
-                                    </a>
+                                        <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium">
+                                            Feed
+                                        </a>
                                     </Link>
 
                                     <Link href="/profile">
-                                    <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" href="/#">
-                                    Profile
-                                    </a>
+                                        <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium">
+                                            Profile
+                                        </a>
                                     </Link>
                                     <Link href="/create">
-                                    <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" href="/#">
-                                        Create Post
-                                    </a>
+                                        <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium">
+                                            Create Post
+                                        </a>
                                     </Link>
                                     <Link href="/about">
-                                    <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium" href="/#">
-                                        About
-                                    </a>
+                                        <a className="text-gray-300  hover:text-gray-800 dark:hover:text-white px-3 py-2 rounded-md text-md font-medium">
+                                            About
+                                        </a>
                                     </Link>
                                 </div>
                             </div>

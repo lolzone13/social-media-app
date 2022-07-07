@@ -13,12 +13,12 @@ export const getStaticProps = async () => {
 
 
 
-const feed = ({ auth, funAuth, ninjas }) => {
+const Feed = ({ auth, funAuth, ninjas }) => {
 
     const router = useRouter();
     useEffect(() => {
         if (!auth.user) {
-            router.push('/auth/Login');
+            router.push('/auth/login');
         }
     }, []);
     return (
@@ -27,9 +27,9 @@ const feed = ({ auth, funAuth, ninjas }) => {
                 <title> Monet | Feed</title>
             </Head>
             <div>
-                <section class="text-gray-600 body-font">
-                    <div class="container px-5 py-24 mx-auto">
-                        <div class="flex flex-wrap -m-4">
+                <section className="text-gray-600 body-font">
+                    <div className="container px-5 py-24 mx-auto">
+                        <div className="flex flex-wrap -m-4">
                             {ninjas.data.map((val) => {
                                 const newStr = val.body.substring(0, Math.min(100, val.body.length)) + '...';
                                 return <Card key={val.id} title={val.title} body={newStr} user={val.email} tag={val.tag} upvotes={val.upvotes} />
@@ -44,4 +44,4 @@ const feed = ({ auth, funAuth, ninjas }) => {
     )
 }
 
-export default feed;
+export default Feed;

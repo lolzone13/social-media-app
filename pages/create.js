@@ -7,14 +7,14 @@ import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-function create({ auth, funAuth }) {
+function Create({ auth, funAuth }) {
     const router = useRouter();
     const [markdownText, setMarkdownText] = useState(``);
     const [ tag, setTag ] = useState('tag');
 
     useEffect(() => {
         if (!auth.user) {
-            router.push('/auth/Login');
+            router.push('/auth/login');
         }
     }, []);
 
@@ -99,4 +99,4 @@ function create({ auth, funAuth }) {
     )
 }
 
-export default create;
+export default Create;

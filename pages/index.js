@@ -11,7 +11,7 @@ export default function Home({ auth, funAuth }) {
   const router = useRouter();
   useEffect(() => {
     if (!auth.user) {
-      router.push('/auth/Login');
+      router.push('/auth/login');
     }
   }, []);
 
@@ -25,13 +25,11 @@ export default function Home({ auth, funAuth }) {
           <div className="flex flex-col justify-center">
             <div className="max-w-xl mb-6">
               <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-                The quick, brown fox
-                <br className="hidden md:block" />
-                jumps over{' '}
+                Welcome to 
                 <span className="relative px-1">
                   <div className="absolute inset-x-0 bottom-0 h-3 transform -skew-x-12 bg-teal-accent-400" />
                   <span className="relative inline-block text-deep-purple-accent-400">
-                    a lazy dog
+                  the Social Blog.
                   </span>
                 </span>
               </h2>
@@ -63,7 +61,7 @@ export default function Home({ auth, funAuth }) {
                       Feed
                     </h6>
                     <p className="text-sm text-gray-900">
-                      See what's happening around the world
+                      See what&apos;s happening around the world
                     </p>
                   </div>
                 </div>
