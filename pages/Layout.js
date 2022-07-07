@@ -4,7 +4,7 @@ import Navbar from "../components/navbar";
 const Layout = ({ children }) => {
     //console.log(children);
 
-    if (children.type.name === "NotFound" || children.type.name === "login" || children.type.name === "register") {
+    if (children.type.name === "NotFound" || children.type.name === "Login" || children.type.name === "Register") {
         return (<>
             {children}
         </>)

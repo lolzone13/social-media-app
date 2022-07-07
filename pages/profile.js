@@ -8,7 +8,7 @@ export default function ({ auth, funAuth }) {
   console.log(auth);
   useEffect(() => {
     if (!auth.user) {
-      router.push('/auth/login');
+      router.push('/auth/Login');
     }
   }, []);
   return (

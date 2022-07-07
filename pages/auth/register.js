@@ -5,7 +5,7 @@ import { useState, useContext } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import axios from "axios";
 
-export default function register({ auth, funAuth }) {
+export default function Register({ auth, funAuth }) {
 
     // const { registerUser } = useContext(AuthContext);
     const [regDetails, setRegDetails] = useState({
@@ -60,7 +60,7 @@ export default function register({ auth, funAuth }) {
                     <button type="submit" className="w-full text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Sign up</button>
                     <div className="text-sm font-medium text-gray-500 dark:text-gray-300">
                         Already have an account?
-                        <Link href="/auth/login">
+                        <Link href="/auth/Login">
                             <a className="text-blue-700 hover:underline dark:text-blue-500"> Login</a>
                         </Link>
                     </div>

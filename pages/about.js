@@ -8,7 +8,7 @@ const About = ({ auth, funAuth }) => {
     const router = useRouter();
     useEffect(() => {
         if (!auth.user) {
-            router.push('/auth/login');
+            router.push('/auth/Login');
         }
     }, []);
     return (

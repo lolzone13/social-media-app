@@ -22,14 +22,14 @@ A blog based social media website where users can post and read blogs written in
 #### Register Page
 
 ```http
-    /auth/register
+    /auth/Register
 ```
 
 
 #### Login Page
 
 ```http
-    /auth/login
+    /auth/Login
 ```
 
 

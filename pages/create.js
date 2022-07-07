@@ -14,7 +14,7 @@ function create({ auth, funAuth }) {
 
     useEffect(() => {
         if (!auth.user) {
-            router.push('/auth/login');
+            router.push('/auth/Login');
         }
     }, []);
 
