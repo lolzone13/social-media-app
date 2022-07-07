@@ -7,7 +7,8 @@ import axios from 'axios';
 export const getStaticProps = async () => {
     const res = await axios.get('https://social-blog-api.herokuapp.com/api/v1/posts');
     return {
-        props: { ninjas: res.data }
+        props: { ninjas: res.data },
+        revalidate: 10
     };
 }
 
