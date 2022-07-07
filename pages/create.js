@@ -1,8 +1,8 @@
 import Head from "next/head";
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import MarkdownInput from "../components/markdownInput";
-import MarkdownOutput from "../components/markdownOutput";
+import MarkdownInput from "../components/MarkdownInput";
+import MarkdownOutput from "../components/MarkdownOutput";
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
