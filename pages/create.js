@@ -41,7 +41,7 @@ function create({ auth, funAuth }) {
             tag: tag
         }
         try {
-            const res = await axios.post('http://localhost:5000/api/v1/posts', data, config);
+            const res = await axios.post('https://social-blog-api.herokuapp.com/api/v1/posts', data, config);
             setTag('tag');
             e.target[0].value = '';
             setMarkdownText(``);

@@ -5,7 +5,7 @@ import Card from "../components/Card";
 import axios from 'axios';
 
 export const getStaticProps = async () => {
-    const res = await axios.get('http://localhost:5000/api/v1/posts');
+    const res = await axios.get('https://social-blog-api.herokuapp.com/api/v1/posts');
     return {
         props: { ninjas: res.data }
     };

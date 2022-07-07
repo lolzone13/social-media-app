@@ -26,7 +26,7 @@ export const AuthProvider = ({ children }) => {
 
         try {
             
-            const res = await axios.post(`http://localhost:5000/api/v1/auth/register`, userData, config);
+            const res = await axios.post(`https://social-blog-api.herokuapp.com/api/v1/auth/register`, userData, config);
             
             if (res.data.success) {
                 dispatch({

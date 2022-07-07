@@ -10,7 +10,7 @@ A blog based social media website where users can post and read blogs written in
 
 **Client:** Next.js, TailwindCSS
 
-**Server:** Node, Express, Postgresql
+**Server:** Node, Express, PostgreSQL
 
 **Authentication:** JWT
 
@@ -84,7 +84,7 @@ A blog based social media website where users can post and read blogs written in
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/lolzone13/social-media-app.git
 ```
 
 Go to the project directory

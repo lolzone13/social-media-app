@@ -23,7 +23,7 @@ export default function register({ auth, funAuth }) {
             }
         }
         try {
-            const res = await axios.post(`http://localhost:5000/api/v1/auth/register`, regDetails, config);
+            const res = await axios.post(`https://social-blog-api.herokuapp.com/api/v1/auth/register`, regDetails, config);
             console.log(res);
 
             funAuth({
